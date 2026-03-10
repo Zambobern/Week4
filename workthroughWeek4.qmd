@@ -1,0 +1,20 @@
+### Week4
+# Workthrough
+# Introduction to tidyverse
+
+
+## Copy files from CytometryInR into week4 folder
+
+```{r}
+getwd()
+```
+
+
+```{r}
+Sourcepath <- "~/Documents/CytometryInR/course/04_IntroToTidyverse/data/"
+targetpath <- "~/Documents/CytometryInR course/Week4/data/"
+files_newweek4 <- list.files(Sourcepath, full.names = TRUE, recursive = TRUE)
+file.copy(from = files_newweek4, to=targetpath)
+```
+```
+
